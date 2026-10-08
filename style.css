@@ -247,14 +247,14 @@ footer #emaillink {
     }
 
     footer .app_logo {
-        margin-top: 60px;
+        margin-top: 0px;
         margin-left: 0;
         justify-content: center;
     }
 
     footer #emaillink {
         margin-left: 0;
-        margin-top: 20px;
+        margin-bottom: 150px;
         width: 100%;
         text-align: center;
         font-size: 16px;
