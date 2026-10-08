@@ -1,0 +1,262 @@
+body {
+    background-image: url(background_image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a { 
+    display: inline;
+    text-decoration: none;
+    font-size: 28px;
+    color: #000000;
+    margin-left: 30px;
+    font-family: 'Inter', sans-serif;
+    transition: color 0.3s ease;
+}
+
+#home {
+    color: #ffffff;
+}
+
+:is(#about, #project, #skill, #contact):hover {
+    color: #ffffff;
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    padding: 0;
+    z-index: 100;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle.open .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+main {
+    flex: 1;
+}
+
+.main-content {
+    margin-top: 150px;
+    margin-left: 90px;
+    color: #000000;  
+}
+
+#firstname {
+    font-size: 80px;
+    margin: 0;
+    line-height: 85px;   
+    font-weight: bold;
+}
+
+#middlename {
+    font-size: 110px;
+    margin: 0;
+    line-height: 95px;
+    font-weight: bold;
+}
+
+#branch {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 30px;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.home-buttons {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 29px;
+}
+
+#button_resume, #button_certificate {
+    height: 45px;
+    width: 185px;
+    margin-left: 20px;
+    border-radius: 15px;
+    border: 3px solid #000000;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+:is(#button_certificate, #button_resume):hover {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+footer {
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+footer .app_logo {
+    margin-top: 110px;
+    margin-left: 250px;
+    display: flex;
+    gap: 20px;
+}
+
+.fa-icon {
+    width: 45px;
+    height: 45px;
+    fill: #000000;
+    transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+footer .app_logo a:hover .fa-icon {
+    fill: #ffffff;
+    transform: scale(1.08);
+}
+
+footer #emaillink {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 120px;
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: flex-end;
+        padding: 20px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        z-index: 99;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+        font-size: 22px;
+        color: #ffffff;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #home {
+        color: #ffeb3b;
+    }
+
+    .main-content {
+        margin-top: 60px;
+        margin-left: 0;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    #firstname {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    #middlename {
+        font-size: 60px;
+        line-height: 65px;
+    }
+
+    #branch {
+        font-size: 22px;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 30px;
+        gap: 15px;
+    }
+
+    #button_resume, #button_certificate {
+        margin-right: 0;
+        width: 220px;
+    }
+
+    footer .app_logo {
+        margin-top: 60px;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    footer #emaillink {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+}

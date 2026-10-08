@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="About.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <div class="nav-links" id="nav-links">
+                <a id="home" href="../index.html">Home</a>
+                <a id="about" href="About.html">About</a>
+                <a id="resume" href="../Resume/Resume.html">Resume</a>
+                <a id="project" href="../Project/Project.html">Project</a>
+                <a id="skill" href="../Skill/Skill.html">Skill</a>
+                <a id="certificate" href="../Certificate/Certificate.html">Certificate</a>
+                <a id="contact" href="../Contact/ContactUs.html">Contact</a>
+            </div>
+        </div>
+    </header> 
+    <main>
+        <div class="top-section">
+            <h2 class="title">About</h2>
+        </div>
+
+        <section class="about-container">
+            <div class="image-side"></div>
+
+            <div class="content-side">
+                <div class="bio-section">
+                    <p>I am a final-year AI Engineering student passionate about building intelligent systems and solving real-world problems. My expertise lies in Machine Learning, Deep Learning, NLP. I love turning data into actionable insights and i am eager to start my professional journey as an AI Engineer.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="edu_heading">Education</h3>
+                    <p class="education">BCA from MSITM Degree College</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

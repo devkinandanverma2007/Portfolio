@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="Skill.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <div class="nav-links" id="nav-links">
+                <a id="home" href="../index.html">Home</a>
+                <a id="about" href="../About/About.html">About</a>
+                <a id="resume" href="../Resume/Resume.html">Resume</a>
+                <a id="project" href="../Project/Project.html">Project</a>
+                <a id="skill" href="../Skill/Skill.html">Skill</a>
+                <a id="certificate" href="../Certificate/Certificate.html">Certificate</a>
+                <a id="contact" href="../Contact/ContactUs.html">Contact</a>
+            </div>
+        </div>
+    </header>   
+    <main>
+        <div class="top-section">
+            <h2 class="title">Soft Skills</h2>
+        </div>
+        <div class="slider-container">
+            
+            <!-- HTML -->
+            <div class="slider-item">
+                <div class="icon">h1</div>
+                <div class="name">HTML</div>
+                <div class="track"><div class="thumb" style="left: 95%;"></div></div>
+            </div>
+
+            <!-- CSS -->
+            <div class="slider-item">
+                <div class="icon">.css</div>
+                <div class="name">CSS</div>
+                <div class="track"><div class="thumb" style="left: 91%;"></div></div>
+            </div>
+
+            <!-- Java Script -->
+            <div class="slider-item">
+                <div class="icon">.js</div>
+                <div class="name">Java Script</div>
+                <div class="track"><div class="thumb" style="left: 70%;"></div></div>
+            </div>
+
+            <!-- Python -->
+            <div class="slider-item">
+                <div class="icon">.py</div>
+                <div class="name">Python</div>
+                <div class="track"><div class="thumb" style="left: 94%;"></div></div>
+            </div>
+
+            <!-- Numpy -->
+            <div class="slider-item">
+                <div class="icon">np</div>
+                <div class="name">Numpy</div>
+                <div class="track"><div class="thumb" style="left: 89%;"></div></div>
+            </div>
+
+            <!-- Pandas -->
+            <div class="slider-item">
+                <div class="icon">pd</div>
+                <div class="name">Pandas</div>
+                <div class="track"><div class="thumb" style="left: 85%;"></div></div>
+            </div>
+
+            <!-- Matplotlib -->
+            <div class="slider-item">
+                <div class="icon">plt</div>
+                <div class="name">Matplotlib</div>
+                <div class="track"><div class="thumb" style="left: 70%;"></div></div>
+            </div>
+
+            <!-- Seaborn -->
+            <div class="slider-item">
+                <div class="icon">sns</div>
+                <div class="name">Seaborn</div>
+                <div class="track"><div class="thumb" style="left: 90%;"></div></div>
+            </div>
+
+            <!-- Django -->
+            <div class="slider-item">
+                <div class="icon">dj</div>
+                <div class="name">Django</div>
+                <div class="track"><div class="thumb" style="left: 60%;"></div></div>
+            </div>
+
+            <!-- MySQL -->
+            <div class="slider-item">
+                <div class="icon">.sql</div>
+                <div class="name">MySQL</div>
+                <div class="track"><div class="thumb" style="left: 75%;"></div></div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

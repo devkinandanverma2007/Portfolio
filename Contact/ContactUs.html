@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="ContactUs.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <div class="nav-links" id="nav-links">
+                <a id="home" href="../index.html">Home</a>
+                <a id="about" href="../About/About.html">About</a>
+                <a id="resume" href="../Resume/Resume.html">Resume</a>
+                <a id="project" href="../Project/Project.html">Project</a>
+                <a id="skill" href="../Skill/Skill.html">Skill</a>
+                <a id="certificate" href="../Certificate/Certificate.html">Certificate</a>
+                <a id="contact" href="../Contact/ContactUs.html">Contact</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="top-section">
+            <h2 class="title">Contact</h2>
+        </div>
+        <div class="contact-container">
+            <form class="contact-form" action="https://formspree.io/f/mwlpkgqr" method="POST">
+                <h2>Contact Me</h2>
+                <div class="form-group">
+                    <label for="email">Enter Your Email Address</label>
+                    <input type="email" id="email" name="Email ID" placeholder="Ex. example@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Enter Your Mobile Number</label>
+                    <input type="tel" id="phone" name="Mobile Number"  pattern="[0-9]{10}" placeholder="Ex. 98765 43210" title="Ten digits code" required/>    
+                </div>
+                <div class="form-group">
+                    <label for="query">Your Query</label>
+                    <textarea id="query" name="Query" rows="5" placeholder="Write your query here..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

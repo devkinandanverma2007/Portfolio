@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="Project.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <div class="nav-links" id="nav-links">
+                <a id="home" href="../index.html">Home</a>
+                <a id="about" href="../About/About.html">About</a>
+                <a id="resume" href="../Resume/Resume.html">Resume</a>
+                <a id="project" href="../Project/Project.html">Project</a>
+                <a id="skill" href="../Skill/Skill.html">Skill</a>
+                <a id="certificate" href="../Certificate/Certificate.html">Certificate</a>
+                <a id="contact" href="../Contact/ContactUs.html">Contact</a>
+            </div>
+        </div>
+    </header>   
+    <main>
+        <div class="top-section">
+            <h2 class="title">Projects</h2>
+        </div>
+        <div class="project-container">
+            
+            <!-- Card 1 -->
+            <div class="project-card">
+                <div class="image-box">
+                    <video src="your-video-1.mp4" autoplay loop muted playsinline></video>
+                </div>
+                <h3>Self Portfolio</h3>
+                <p>My personal portfolio that shows my Skills, Projects, Certificate, Resume etc.</p>
+                <a href="index.html">
+                    <button class="view-btn">Visit on Website</button>
+                </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="project-card">
+                <div class="image-box">
+                    <img src="" alt="This Website is under Process">
+                </div>
+                <h3>Real Estate Price Prediction</h3>
+                <p></p>
+                <a href="">
+                    <button class="view-btn">Visit on Website</button>
+                </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="project-card">
+                <div class="image-box">
+                    <img src="" alt="This Website is under Process">
+                </div>
+                <h3>The Tr</h3>
+                <p></p>
+                <a href="">
+                    <button class="view-btn">Visit on Website</button>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
