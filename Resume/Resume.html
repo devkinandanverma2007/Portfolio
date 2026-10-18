@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="Resume.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <div class="nav-links" id="nav-links">
+                <a id="home" href="../index.html">Home</a>
+                <a id="about" href="../About/About.html">About</a>
+                <a id="resume" href="../Resume/Resume.html">Resume</a>
+                <a id="project" href="../Project/Project.html">Project</a>
+                <a id="skill" href="../Skill/Skill.html">Skill</a>
+                <a id="certificate" href="../Certificate/Certificate.html">Certificate</a>
+                <a id="contact" href="../Contact/ContactUs.html">Contact</a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="top-section">
+            <h2 class="title">Resume</h2>
+        </div>
+        <div class="resume-container">
+            <!-- Top Icon Section -->
+            <div class="icon-box">
+                <div class="css-document">
+                    <div class="doc-lines">
+                        <div class="line short"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Heading -->
+            <h1>My Resume</h1>
+            <!-- Subheading Text -->
+            <p class="instruction-text">Choose an option below to access my resume:</p>
+            <!-- Action Buttons -->
+            <div class="button-group">
+                <a href="./resume.pdf" class="btn btn-view">
+                    <i class="fa-solid fa-arrow-down"></i> View Resume
+                </a>
+                <a href="./resume.pdf" class="btn btn-download" download="Devkinandan_Verma_Resume.pdf">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
